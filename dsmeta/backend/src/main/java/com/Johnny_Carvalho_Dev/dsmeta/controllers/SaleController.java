@@ -1,10 +1,12 @@
 package com.Johnny_Carvalho_Dev.dsmeta.controllers;
 
-import java.util.List;
+import org.springframework.data.domain.Pageable;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Johnny_Carvalho_Dev.dsmeta.entities.Sale;
@@ -35,7 +37,10 @@ public class SaleController {
 	 * com nosso front end.
 	 * */
 	@GetMapping
-	public List<Sale> findSales() {
-		return service.findSales();
+	public Page<Sale> findSales(
+			@RequestParam(value = "minDate", defaultValue = "") String minDate,
+			@RequestParam(value = "maxDate", defaultValue = "") String maxDate,
+			Pageable pageable) {
+		return service.findSales(minDate, maxDate, pageable);
 	}
 }
