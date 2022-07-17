@@ -2,12 +2,21 @@ import { NotificationButton } from '../NotificationButton';
 import './styles.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export function SalesCard() {
 
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
+
+  useEffect(() => {
+    axios.get("http://localhost:8080/sales?minDate=2021-11-01&maxDate=2021-12-31")
+      .then(response => {
+        console.log(response.data);
+      });
+  }, []);
+
 
   return (
     <div className="dsmeta-card">
