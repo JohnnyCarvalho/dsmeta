@@ -30,7 +30,7 @@ public class SaleService {
 		 * vai retornar a lista de vendas do último mês a contar do dia atual da requisição.
 		 * 
 		*/
-		LocalDate min = minDate.equals("") ? today.minusYears(1) : LocalDate.parse(minDate);
+		LocalDate min = minDate.equals("") ? today.minusDays(365) : LocalDate.parse(minDate);
 		LocalDate max = maxDate.equals("") ? today : LocalDate.parse(maxDate);
 		
 		return repository.findSales(min, max, pageable);
