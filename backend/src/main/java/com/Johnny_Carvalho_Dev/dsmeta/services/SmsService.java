@@ -38,7 +38,8 @@ public class SmsService {
 		
 		String msg = "O vendedor "+sale.getSellerName()+
 				" foi o vendedor que mais vendeu no intervalo de "+date+" ele"
-				+ " vendeu um total de R$ "+String.format("%.2f", valorVenda);
+				+ " vendeu um total de R$ "+String.format("%.2f", valorVenda)+
+				"\nPARABÉNS PELO ÓTIMO EMPRENHO";
 
 		Twilio.init(twilioSid, twilioKey);
 

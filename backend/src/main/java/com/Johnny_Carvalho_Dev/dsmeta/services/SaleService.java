@@ -28,6 +28,7 @@ public class SaleService {
 		 * fazendo teste de condição utilizando a condição ternária, ou seja
 		 * se nenhum valor for informado no momento da requisição, o sistema
 		 * vai retornar a lista de vendas do último mês a contar do dia atual da requisição.
+		 * 
 		*/
 		LocalDate min = minDate.equals("") ? today.minusMonths(1) : LocalDate.parse(minDate);
 		LocalDate max = maxDate.equals("") ? today : LocalDate.parse(maxDate);
