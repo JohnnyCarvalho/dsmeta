@@ -1,4 +1,9 @@
-<h1 align="center">Projeto Spring e React</h1>
+<h1 align="center">Projeto Spring e React <img align="center" alt="Johnny-Oficial" height="30" width="40" src="./frontend/src/assets/img/Medalha.svg" /></h1>
+
+```javascript
+@Author Johnny Carvaho
+@Date 2022-07-17
+```
 
 ## Principais tecnologias utilizadas: <br/>
 <p>
@@ -428,4 +433,13 @@ https://www.netlify.com/
 - Configurações adicionais
   - Site settings -> Domain Management: (colocar o nome que você quiser)
   - Deploys -> Trigger deploy
+
+
+<h1 align="center">Gif do projeto</h1>
+
+<p align="center">
+	<img alt="Johnny-Java" height="460px" width="720px" src="./frontend/src/assets/img/DsMeta.gif" />
+</p>
+
+
 
