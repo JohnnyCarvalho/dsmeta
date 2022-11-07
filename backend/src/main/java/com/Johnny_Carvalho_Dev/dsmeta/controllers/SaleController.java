@@ -18,7 +18,7 @@ import com.Johnny_Carvalho_Dev.dsmeta.services.SmsService;
  * @Date 2022-07-17
  * 
  * Essa função é resposnsável por buscar no back end os dados de venda
- * e disponibilizá-las no front end, estamo usando aqui o padrão de 
+ * e disponibilizá-las no front end, estamos usando aqui o padrão de 
  * 3 camadas, ou seja, o controller depende do service que depende do repository
  * como lá na classe SalesService nós chamamos o Sales Repository, aqui nós
  * vamos chamar o Sales Service.
