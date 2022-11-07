@@ -1,4 +1,9 @@
-<h1 align="center">Projeto Spring e React</h1>
+<h1 align="center">Projeto Spring e React <img align="center" alt="Johnny-Oficial" height="30" width="40" src="./frontend/src/assets/img/Medalha.svg" /></h1>
+
+```javascript
+@Author Johnny Carvaho
+@Date 2022-07-17
+```
 
 ## Principais tecnologias utilizadas: <br/>
 <p>
@@ -164,7 +169,7 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 ```
 
-#### import.sql (inserindo dados no banco)
+#### import.sql (inserindo dados manualmente no banco)
 ```sql
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Barry Allen',121,67,18196.0,'2022-06-16');
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Logan',26,14,4255.0,'2022-06-14');
@@ -428,4 +433,13 @@ https://www.netlify.com/
 - Configurações adicionais
   - Site settings -> Domain Management: (colocar o nome que você quiser)
   - Deploys -> Trigger deploy
+
+
+<h1 align="center">Gif do projeto</h1>
+
+<p align="center">
+	<img alt="Johnny-Java" height="460px" width="720px" src="./frontend/src/assets/img/DsMeta.gif" />
+</p>
+
+
 
